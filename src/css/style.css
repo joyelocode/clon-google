@@ -5,6 +5,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -18,10 +26,11 @@ header {
 header nav {
     display: flex;
     justify-content: flex-end;
+    margin-top: 12px;
 }
 
 header nav .nav-right-section {
-    width: 250px;
+    width: 225px;
     height: auto;
     display: flex;
     list-style: none;
@@ -30,20 +39,52 @@ header nav .nav-right-section {
 }
 
 nav .nav-right-section a {
-    margin-right: 10px;
-    color: #000000;
+    margin-right: 15px;
+    color: #000000DE;
 }
 
-nav .nav-right-section .menu-icon {
-    background-image: url('https://static.thenounproject.com/png/756729-200.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 25px;
-    height: 25px;
+nav .nav-right-section span {
+    margin-left: 12px;
+    color: #5f6368;
 }
 
 nav .nav-right-section img {
     border-radius: 50%;
-    margin-left: 10px;
+}
+
+main {
+    text-align: center;
+}
+
+main .main-logo {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+}
+
+main .main-input {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 580px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 425px;
+    height: 42px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
 }
